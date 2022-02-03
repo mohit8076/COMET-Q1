@@ -1,0 +1,98 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "lato", sans-serif;
+}
+
+.main{
+    background-color: rgb(238, 237, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Section{
+    background-color: rgb(202, 229, 241);
+    height: 400px;
+    width: 600px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .4);
+}
+.fas{
+    font-size: 24px;
+}
+.close{
+    border: none;
+    background-color: transparent;
+    display: float;
+    float: right;
+    margin: 10px;
+}
+
+.close :hover{
+    font-size: 30px;
+    transform: rotate(180deg);
+    transition: 0.9s;
+}
+
+.menu{
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+}
+
+.menu :hover{
+    font-size: 30px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.links a{
+    display: block;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    color: hsl(210, 22%, 49%);;
+    transition: all 0.3s linear;
+}
+
+.links a:hover {
+    background: hsl(205, 86%, 81%);;
+    color: hsl(205, 78%, 60%);
+    padding-left: 1.75rem;
+}
+
+.sidebar {
+    position: fixed;
+    margin-right: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    box-shadow: hsl(360, 67%, 44%);
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
+
+@media screen and (min-width: 676px) {
+    .sidebar {
+      width: 400px;
+    }
+  }
