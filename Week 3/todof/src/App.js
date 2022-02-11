@@ -15,7 +15,7 @@ function App() {
   const addItem = (e) =>{
     e.preventDefault();
     const newItem = current;
-    if(newItem.text =="")
+    if(newItem.text ==="")
       return;
     setTodo(prevState => [...prevState,newItem] )
     setCurrent(initialState)
@@ -28,6 +28,8 @@ function App() {
     })
   }
   console.log(current);
+
+  
   const deleteItem = (key) =>{
     const items = todo;
     const filteredItems= items.filter(item =>
@@ -36,25 +38,6 @@ function App() {
      filteredItems
     )
   }
-   const setUpdate = (text,key) =>{
-     console.log(text,key,'------------')
-    const items = todo;
-      items.map(item=> {
-      if(item.key===key){
-        // console.log(text,"+++++++++++++++++++")
-         item.text= text;
-        // console.log(text,"-----------------")
-      }
-    })
-    console.log(items,"items------");
-  
-    setTodo(items);
-    console.log(todo,"todo-------------------------------------------------------");
-
-  
-  }
-  
- {
   return (
     <div className="App">
       <header>
@@ -64,14 +47,13 @@ function App() {
         </form>
         <p>{todo.text}</p>
         
-          <ListItems items={todo} deleteItem={deleteItem} setUpdate={setUpdate}/>
+          <ListItems items={todo} deleteItem={deleteItem} />
           {/* <ListItems items={todo} setUpdate={setUpdate}/> */}
           {/* <ListItems items={todo} /> */}
         
       </header>
     </div>
   );
- }
 }
 
 
