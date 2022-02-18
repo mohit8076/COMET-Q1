@@ -1,16 +1,16 @@
-body{
-  background-color: #9266ff ;
+body {
+  background-color: #9266ff;
 }
 
-.App{
+.App {
   background-color: #3f3160;
   min-height: 500px;
   width: 400px;
   margin: 40px auto;
 }
 
-#to-do input{
-  background-color:rgb(27,112,137);
+#to-do input {
+  background-color: rgb(27, 112, 137);
   border: 0;
   width: 200px;
   height: 50px;
@@ -21,19 +21,19 @@ body{
   color: #fff;
 }
 
-#to-do input::placeholder{
-  color: rgba(255,255,255,0.5);
+#to-do input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
-#to-do input:focus{
+#to-do input:focus {
   outline: none;
 }
 
-#to-do button{
+#to-do button {
   height: 50px;
   width: 80px;
   border-radius: 5px;
   border: 0;
-  background-color: rgb(202,156,24);
+  background-color: rgb(202, 156, 24);
   cursor: pointer;
   font-weight: bolder;
   color: #fff;
