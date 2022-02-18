@@ -1,0 +1,8 @@
+.Employee{
+    height:120px;
+    width:200px;
+    margin:20px;
+    padding:20px;
+    border:1px solid #ccc;
+    display: inline-block;
+}
