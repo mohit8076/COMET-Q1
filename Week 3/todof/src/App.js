@@ -31,12 +31,6 @@ function App() {
     setTodo(filteredItems);
   };
 
-  const setUpdate = (text, key) => {
-    const updatedTodo = [...todo];
-    const item = updatedTodo.find((item) => item.key === key);
-    item.text = text;
-    setTodo(updatedTodo);
-  };
 
   console.log("Todo state: ", todo);
   return (
@@ -54,15 +48,11 @@ function App() {
         <ListItems
           items={todo}
           deleteItem={deleteItem}
-          updateItem={setUpdate}
+          // updateItem={setUpdate}
         />
       </header>
     </div>
   );
 }
 
-<<<<<<< HEAD
 export default App;
-=======
-export default App;
->>>>>>> 3f4de9d7a6e6b8d132e2de518f3a2f12ff30a974
