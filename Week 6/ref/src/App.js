@@ -1,24 +1,39 @@
 import React, { useState,useEffect,useRef } from "react";
 
-function App() {
-  // const [rerenderCount, setRerenderCount] = useState(0);
+// function App() {
+//   // const [rerenderCount, setRerenderCount] = useState(0);
 
-  // useEffect(() => {
-  //   setRerenderCount((prevCount) => prevCount + 1);
-  // });
+//   // useEffect(() => {
+//   //   setRerenderCount((prevCount) => prevCount + 1);
+//   // });
 
-  // return <div>{rerenderCount}</div>;
+//   // return <div>{rerenderCount}</div>;
 
-  const rerenderCount = useRef(0);
+//   const rerenderCount = useRef(0);
 
-  useEffect(() => {
-    rerenderCount.current = rerenderCount.current + 1;
-  });
+//   useEffect(() => {
+//     rerenderCount.current = rerenderCount.current + 1;
+//   });
 
-  return <div>{rerenderCount.current}</div>;
-}
+//   return <div>{rerenderCount.current}</div>;
+// }
 
-export default App;
+function Component() {
+	const inputRef = useRef(null)
+  
+	const focusInput = () => {
+	  inputRef.current.focus()
+	}
+  
+	return (
+	  <>
+		<input ref={inputRef} />
+		<button onClick={focusInput}>Focus Input</button>
+	  </>
+	)
+  }
+
+export default Component;
 
 import React, { Component } from 'react'
 
@@ -54,4 +69,4 @@ export class RefsDemo extends Component {
 	}
 }
 
-export default RefsDemo
+// export default RefsDemo
